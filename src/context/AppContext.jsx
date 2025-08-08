@@ -11,7 +11,7 @@ const AppContextProvider = (props) => {
   const [user, setUser] = useState(null);
   const [showLogin, setShowLogin] = useState(false);
   const [token, setToken] = useState(localStorage.getItem("token"));
-  const [credit, setCredit] = useState(false);
+  const [credit, setCredit] = useState(5);
 
   const backendUrl = "https://imagify-backend-3cij.onrender.com";
   const navigate = useNavigate()
