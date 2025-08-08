@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       if (state === "Login") {
-        const { data } = await axios.post(backendUrl + "/api/user/login", {
+        const { data } = await axios.post(`https://imagify-backend-3cij.onrender.com/api/user/login`, {
           email,
           password,
         });
